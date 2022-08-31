@@ -46,8 +46,8 @@ export default function Contact() {
   };
 
   return (
-    <S.ContainerContact>
-      <S.Title>Contact with me</S.Title>
+    <S.ContainerContact id="contact">
+      <S.Title>👋🏽 Contact with me</S.Title>
       <S.ContainerForm>
         {successSendForm ? (
           <S.SuccessMessage>The form was sent successfully</S.SuccessMessage>

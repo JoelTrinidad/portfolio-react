@@ -1,11 +1,11 @@
 import * as S from "./Projects.styles";
 import { projectsPortfolio } from "./ProjectsData";
-import logoGithub from "../../assets/svg/github.svg"
-import logoWebsite from "../../assets/svg/website.svg"
+import logoGithub from "../../assets/svg/github.svg";
+import logoWebsite from "../../assets/svg/website.svg";
 
 export default function Projects() {
   return (
-    <S.ContainerProjects>
+    <S.ContainerProjects id="projects">
       <S.Title>
         Some of
         <span>
@@ -29,16 +29,16 @@ export default function Projects() {
             </S.ContainerTechs>
             <S.Description>{project.description}</S.Description>
             <S.ContainerFooter>
-                {project.repository && (
-                    <a href={project.repository} target="_blank" rel="noreferrer">
-                        <img src={logoGithub} alt={project.title} />
-                    </a>
-                )}
-                {project.website && (
-                    <a href={project.website} target="_blank" rel="noreferrer">
-                        <img src={logoWebsite} alt={project.title} />
-                    </a>
-                )}
+              {project.repository && (
+                <a href={project.repository} target="_blank" rel="noreferrer">
+                  <img src={logoGithub} alt={project.title} />
+                </a>
+              )}
+              {project.website && (
+                <a href={project.website} target="_blank" rel="noreferrer">
+                  <img src={logoWebsite} alt={project.title} />
+                </a>
+              )}
             </S.ContainerFooter>
           </S.ProjectContent>
         ))}

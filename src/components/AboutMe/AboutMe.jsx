@@ -17,11 +17,11 @@ export default function AboutMe() {
   ];
 
   return (
-    <S.ContainerAboutMe>
+    <S.ContainerAboutMe id="about-me">
       <S.ContainerFlex>
         <S.ContainerText>
           <S.Title>
-            <p>Hello, im</p>
+            <p>👋🏼 Hello, im</p>
             <p>Joel Trinidad</p>
             <p>Frontend Developer</p>
           </S.Title>
